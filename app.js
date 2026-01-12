@@ -29,7 +29,7 @@ main()
     .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect(mongo_URL);
+  await mongoose.connect(dbUrl);
 }
 
 app.set("view engine","ejs");
