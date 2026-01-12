@@ -35,6 +35,11 @@ const listingSchema = new Schema({
             type: [Number],   // [longitude, latitude]
             required: true,
         }
+    },
+    category:{
+        type:String,
+        enum:["Trending","Rooms","Premium","Mountain","Pool","Gym","Bar","Pet-Friendly","Hotels","Farms","Camping","Artic","Beach"],
+        default:"Hotels",
     }
 });
 

@@ -10,6 +10,25 @@
                 <div class="valid-feedback">Tittle looks good!</div>
             </div>
             <div class="mb-3">
+                <label for="category" class="form-label">Title</label>
+                <select class="form-select form-control" aria-label="Default select example" name="listing[category]">
+                    <option selected>Category</option>
+                    <option value="1">Trending</option>
+                    <option value="2">Rooms</option>
+                    <option value="3">Premium</option>
+                    <option value="4">Mountain</option>
+                    <option value="5">Pool</option>
+                    <option value="6">Gym</option>
+                    <option value="7">Bar</option>
+                    <option value="8">Pet-Friendly</option>
+                    <option value="9">Hotels</option>
+                    <option value="10">Farms</option>
+                    <option value="11">Camping</option>
+                    <option value="12">Artic</option>
+                    <option value="13">Beach</option>
+                </select>
+            </div>
+            <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
                 <textarea name="listing[description]" placeholder="Enter description" type="text" class="form-control" required></textarea>
                 <div class="invalid-feedback">Please enter a short description.</div>
