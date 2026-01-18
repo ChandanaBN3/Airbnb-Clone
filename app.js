@@ -14,6 +14,7 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user.js");
+const ExpressError = require("./utils/ExpressError.js");
 
 const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
@@ -32,6 +33,9 @@ main()
 async function main() {
   await mongoose.connect(dbUrl);
 }
+
+mongoose.set("bufferCommands", false);
+
 
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"/views"));
