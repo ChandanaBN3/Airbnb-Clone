@@ -46,5 +46,4 @@ It supports user authentication, listings, reviews, sessions, and flash messages
 
 ---
 
-## 📁 Project Structure
 
